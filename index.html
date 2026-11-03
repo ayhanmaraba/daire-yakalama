@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daire Yakalama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Daire Yakalama</h1>
+    <div class="stats">
+      <div class="stat">Süre: <span id="time">20</span> sn</div>
+      <div class="stat">Puan: <span id="score">0</span></div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section id="gameArea" class="game-area">
+      <div id="circle" class="circle hidden"></div>
+      <p id="hint" class="hint">Başlamak için aşağıdaki <b>Başla</b> butonuna bas.</p>
+
+      <div id="result" class="result hidden">
+        <h2>Süre doldu!</h2>
+        <p class="final">Puanın: <span id="finalScore">0</span></p>
+        <p id="grade" class="grade"></p>
+        <ul id="evaluation" class="evaluation"></ul>
+      </div>
+    </section>
+
+    <aside class="history">
+      <h2>Geçmiş Skorlar</h2>
+      <div class="summary">
+        <div><span>En İyi</span><b id="best">-</b></div>
+        <div><span>Ortalama</span><b id="avg">-</b></div>
+        <div><span>Oyun</span><b id="count">0</b></div>
+      </div>
+      <ol id="historyList" class="history-list"></ol>
+      <p id="emptyHistory" class="empty">Henüz oyun yok.</p>
+      <button id="clearBtn" class="clear-btn">Geçmişi Temizle</button>
+    </aside>
+  </main>
+
+  <footer class="bottom">
+    <button id="startBtn" class="start-btn">Başla</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
